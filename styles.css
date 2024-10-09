@@ -1,0 +1,96 @@
+/* รีเซ็ตค่าเริ่มต้นสำหรับทุกองค์ประกอบ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* การตั้งค่าเบื้องต้นสำหรับ body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* สีพื้นหลังที่อ่อนนุ่ม */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* การตั้งค่าสำหรับ container */
+.container {
+    background-color: white; /* สีพื้นหลังของ container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูนุ่มนวลขึ้น */
+    width: 320px; /* ปรับขนาดให้กว้างขึ้นเล็กน้อย */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* เพิ่มเอฟเฟกต์ hover ให้ container ขยับเล็กน้อย */
+.container:hover {
+    transform: translateY(-5px); /* ขยับขึ้นเมื่อ hover */
+}
+
+/* การตั้งค่าสำหรับ h2 */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; /* ขนาดของข้อความ */
+}
+
+/* การตั้งค่าสำหรับ label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold; /* ทำให้ข้อความ label เด่นขึ้น */
+}
+
+/* การตั้งค่าสำหรับ input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* เปลี่ยนสีขอบเมื่อมีการโฟกัสที่ input */
+input:focus {
+    border-color: #d400ff; /* สีเดียวกับปุ่ม */
+    outline: none;
+}
+
+/* การตั้งค่าสำหรับปุ่ม */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d400ff; /* สีม่วงสดใส */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* เอฟเฟกต์ hover ของปุ่ม */
+button:hover {
+    background-color: #062546; /* เปลี่ยนสีปุ่มเมื่อ hover */
+}
+
+/* การตั้งค่าสำหรับ success page */
+.success h2 {
+    font-size: 24px;
+    color: #a7288e; /* สีม่วงอ่อนในหน้าความสำเร็จ */
+}
+
+/* ปรับปรุง UI สำหรับมือถือ */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* ปรับให้เต็มหน้าจอมือถือ */
+    }
+}

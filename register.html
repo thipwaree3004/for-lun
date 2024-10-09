@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- เชื่อมโยงกับไฟล์ JavaScript -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm" onsubmit="event.preventDefault(); register();">
+            <label for="registerFirstname">First Name:</label>
+            <input type="text" id="registerFirstname" required>
+
+            <label for="registerLastname">Last Name:</label>
+            <input type="text" id="registerLastname" required>
+
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
